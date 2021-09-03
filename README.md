@@ -47,6 +47,6 @@ Prettier is a popular code formatting tool. You can customise how prettier works
 
 1. sass/scss
 ```bash
-npm i sass
+npm i sass -D
 ```
 Next.js will do the rest for you.
