@@ -22,3 +22,27 @@ mv next-boilerplate your-app-name
 cd your-app-name
 npm i
 ```
+
+## Features
+
+1. Typescript alias paths
+
+```ts
+import { Header } from "@components/Main"
+import { User } from "@types"
+```
+
+We've added alias paths for
+- `src/@types` => `@types`
+- `src/components` => `@components`
+- `src/styles` => `@styles`
+- `src/elements` => `@elements`
+- `src/utils` => `@utils`
+
+## Optional
+
+1. sass/scss
+```bash
+npm i sass
+```
+Next.js will do the rest for you.
