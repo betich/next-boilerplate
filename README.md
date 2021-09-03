@@ -39,6 +39,10 @@ We've added alias paths for
 - `src/elements` => `@elements`
 - `src/utils` => `@utils`
 
+2. Prettier
+
+Prettier is a popular code formatting tool. You can customise how prettier works by editing the `.prettierrc` file.
+
 ## Optional
 
 1. sass/scss
