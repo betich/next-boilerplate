@@ -12,6 +12,7 @@ Below are ways to start your project with this boilerplate.
 ```bash
 npx degit betich/next-boilerplate your-app-name
 cd your-app-name
+git branch -m master main
 npm i
 ```
 
