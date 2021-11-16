@@ -16,10 +16,9 @@ git branch -m master main
 npm i
 ```
 
-2. Clone the repo normally
+2. Clone the repo with git
 ```bash
-git clone https://github.com/betich/next-boilerplate
-mv next-boilerplate your-app-name
+git clone https://github.com/betich/next-boilerplate your-app-name
 cd your-app-name
 npm i
 ```
