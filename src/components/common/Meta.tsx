@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { FC } from "react";
 
-const MetaData: FC = () => {
+export const MetaData: FC = () => {
   return (
     <Head>
       <title>Next App</title>
