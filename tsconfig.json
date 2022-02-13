@@ -37,6 +37,9 @@
       ],
       "@hooks/*": [
         "src/hooks/*"
+      ],
+      "@lib/*" :[
+        "src/lib/*"
       ]
     },
     "target": "es5",
