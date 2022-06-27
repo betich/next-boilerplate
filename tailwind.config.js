@@ -1,13 +1,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
-const plugin = require("tailwindcss/plugin")
 
 module.exports = {
-  corePlugins: {
-    preflight: true,
+  experimental: {
+    optimizeUniversalDefaults: true,
   },
-  mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx,vue}"],
-  content: ["./src/**/*.{js,jsx,ts,tsx,vue}"],
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       typography: (theme) => ({
@@ -76,55 +73,9 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      display: [
-        // "Inter var",
-        "Inter",
-        "Noto Sans Thai",
-        "SF Pro Display",
-        "Sukhumvit Set",
-        "Kanit",
-        ...defaultTheme.fontFamily.sans,
-      ],
+      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      display: ["Inter var", "SF Pro Display", "Sukhumvit Set", "IBM Plex Sans Thai", ...defaultTheme.fontFamily.sans],
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    plugin(function ({ addBase }) {
-      addBase({
-        // "@font-face": {
-        //   fontFamily: "Inter var",
-        //   fontWeight: "100 900",
-        //   fontStyle: "normal",
-        //   fontNamedInstance: "Regular",
-        //   fontDisplay: "swap",
-        //   src: 'url("/fonts/Inter-roman.var.woff2?3.13") format("woff2")',
-        // },
-        // "@font-face": {
-        //   fontFamily: "Inter var",
-        //   fontWeight: "100 900",
-        //   fontStyle: "italic",
-        //   fontNamedInstance: "Italic",
-        //   fontDisplay: "swap",
-        //   src: 'url("/fonts/Inter-italic.var.woff2?3.13") format("woff2")',
-        // },
-        "@font-face": {
-          fontFamily: "Kanit",
-          fontStyle: "normal",
-          fontWeight: "400",
-          fontDisplay: "swap",
-          src: 'local("Kanit Regular"), local("Kanit-Regular"), url(https://fonts.gstatic.com/s/kanit/v7/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2) format("woff2")',
-          unicodeRange: "U+0E01-0E5B, U+200C-200D, U+25CC",
-        },
-        "@font-face": {
-          fontFamily: "Sukhumvit Set",
-          fontDisplay: "swap",
-          src: "local('Sukhumvit Set')",
-          unicodeRange: "U+0E01-0E5B, U+200C-200D, U+25CC",
-        },
-      })
-    }),
-  ],
-  variants: {
-    scrollbar: ["rounded"],
-  },
+  plugins: [require("@tailwindcss/typography")],
 }

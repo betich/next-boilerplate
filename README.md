@@ -9,6 +9,7 @@ This is project was bootstrapped with [betich's](https://github.com/betich/next-
 Below are ways to start your project with this boilerplate.
 
 1. Use `degit` to clone the repo
+
 ```bash
 npx degit betich/next-boilerplate your-app-name
 cd your-app-name
@@ -17,6 +18,7 @@ npm i
 ```
 
 2. Clone the repo with git
+
 ```bash
 git clone https://github.com/betich/next-boilerplate your-app-name
 cd your-app-name
@@ -33,6 +35,7 @@ import { User } from "@types"
 ```
 
 We've added alias paths for
+
 - `src/@types` => `@types`
 - `src/components` => `@components`
 - `src/styles` => `@styles`
@@ -46,7 +49,7 @@ Prettier is a popular code formatting tool. You can customise how prettier works
 ## Optional
 
 1. sass/scss
+
 ```bash
 npm i sass -D
 ```
-Next.js will do the rest for you.

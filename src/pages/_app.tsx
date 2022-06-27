@@ -1,11 +1,10 @@
-import { MetaData } from "@components/common/Meta"
 import "@styles/tailwind.css"
+import "@/styles/fonts.css"
 import type { AppProps } from "next/app"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <MetaData />
       <Component {...pageProps} />
     </>
   )
