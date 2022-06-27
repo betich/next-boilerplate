@@ -1,8 +1,8 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
-import { FC } from "react"
+import { FC, ReactElement } from "react"
 
-export const DescribeRoute: FC<{ title: string; description: string; imgURL?: string }> = ({
+export const DescribeRoute: FC<{ title: string; description: string; imgURL?: string; children?: ReactElement }> = ({
   title,
   description,
   imgURL,
