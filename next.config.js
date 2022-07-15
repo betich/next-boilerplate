@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const withPWA = require("next-pwa")
+const { join } = require("path")
+
+module.exports = withPWA({
   reactStrictMode: true,
+  pwa: {
+    dest: "public",
+    swSrc: "service-worker.js",
+  },
   webpack(config, options) {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -24,4 +31,4 @@ module.exports = {
 
     return config
   },
-}
+})
