@@ -73,8 +73,14 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-      display: ["Inter var", "SF Pro Display", "Sukhumvit Set", "IBM Plex Sans Thai", ...defaultTheme.fontFamily.sans],
+      display: [
+        "Inter var",
+        "Noto Sans Thai",
+        "SF Pro Display",
+        "Sukhumvit Set",
+        "IBM Plex Sans Thai",
+        ...defaultTheme.fontFamily.sans,
+      ],
     },
   },
   plugins: [require("@tailwindcss/typography")],
