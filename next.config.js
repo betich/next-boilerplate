@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withPWA = require("next-pwa")
+const withPWA = require("next-pwa")({
+  dest: "public",
+})
 const { join } = require("path")
 
 module.exports = withPWA({
@@ -15,7 +17,6 @@ module.exports = withPWA({
       "@components": join(__dirname, "src/components"),
       "@pages": join(__dirname, "src/pages"),
       "@helpers": join(__dirname, "src/helpers"),
-      "@types": join(__dirname, "src/types"),
       "@types": join(__dirname, "src/types"),
       "@modules": join(__dirname, "src/modules"),
       "@utils": join(__dirname, "src/utils"),
