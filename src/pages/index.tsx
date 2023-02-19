@@ -1,4 +1,4 @@
-import DescribeRoute from "@components/common/DescribeRoute"
+import DescribeRoute from "@/components/common/DescribeRoute"
 
 export default function HomePage() {
   return (
