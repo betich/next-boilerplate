@@ -1,5 +1,6 @@
-import DescribeRoute from "@/components/common/DescribeRoute"
 import Link from "next/link"
+
+import DescribeRoute from "@/components/common/DescribeRoute"
 
 export default function HomePage() {
   return (

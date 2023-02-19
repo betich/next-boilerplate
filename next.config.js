@@ -3,6 +3,7 @@ const withPWA = require("next-pwa")({
   dest: "public",
   swSrc: "service-worker.js",
 })
+
 const { join } = require("path")
 
 module.exports = withPWA({

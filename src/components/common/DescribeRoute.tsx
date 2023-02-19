@@ -1,6 +1,7 @@
+import { ReactElement } from "react"
+
 import Head from "next/head"
 import { useRouter } from "next/router"
-import { ReactElement } from "react"
 
 interface DescribeRouteProps {
   title: string
