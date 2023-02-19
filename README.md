@@ -28,26 +28,21 @@ npm i
 1. Typescript alias paths
 
 ```ts
-import { Header } from "@components/Main"
-import { User } from "@types"
+import { Header } from "@/components/Main"
+import { User } from "@/types"
 ```
 
-We've added alias paths for
+We've added alias paths for the `src` directory. Example:
 
-- `src/@types` => `@types`
-- `src/components` => `@components`
-- `src/styles` => `@styles`
-- `src/elements` => `@elements`
-- `src/utils` => `@utils`
+- `src/components` => `@/components`
+- `src/styles` => `@/styles`
+- `src/elements` => `@/elements`
+- `src/utils` => `@/utils`
 
 2. Prettier
 
-Prettier is a popular code formatting tool. You can customise how prettier works by editing the `.prettierrc` file.
+Customize how prettier works by editing the `.prettierrc` file.
 
-## Optional
+3. ESLint
 
-1. sass/scss
-
-```bash
-npm i sass -D
-```
+Customize how eslint works by editing the `.eslintrc.js` file.
