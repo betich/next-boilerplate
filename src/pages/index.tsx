@@ -1,7 +1,6 @@
-import { DescribeRoute } from "@components/Meta/DescribeRoute"
-import type { NextPage } from "next"
+import DescribeRoute from "@components/common/DescribeRoute"
 
-const Home: NextPage = () => {
+export default function HomePage() {
   return (
     <DescribeRoute title="Next.js boilerplate" description="by betich">
       <main>
@@ -17,5 +16,3 @@ const Home: NextPage = () => {
     </DescribeRoute>
   )
 }
-
-export default Home
